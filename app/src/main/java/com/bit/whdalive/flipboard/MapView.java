@@ -11,15 +11,17 @@ import android.graphics.drawable.BitmapDrawable;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 
 public class MapView extends View {
 
+    //“右侧” 沿Y轴翻折的角度
     private float degreeY;
 
+    //canvas 旋转的角度
     private float degreeZ;
 
+    //“左侧” 最后翻折的角度
     private float fixY;
 
     private Paint mPaint;
